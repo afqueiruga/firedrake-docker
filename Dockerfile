@@ -20,6 +20,7 @@ RUN python3 firedrake-install
 RUN apt-get -y install python-flake8 python-numpy python3-numpy
 # Set up env
 RUN source /firedrake/bin/activate
+RUN mkdir /home/drake
 # Test command
 RUN cd /firedrake/src/firedrake ; make test
 ENTRYPOINT ["bash"]

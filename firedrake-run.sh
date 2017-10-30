@@ -1,1 +1,1 @@
-docker run -i -v .:/home/drake firedrake:latest
+docker run -it -v `pwd`:/home/drake firedrake:latest
